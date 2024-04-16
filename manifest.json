@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Chrome dice",
+    "version": "1.1",
+    "description": "dice roller",
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "images/dice16.png",
+            "48": "images/dice48.png",
+            "128": "images/dice128.png"
+        }
+    },
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ]
+}
