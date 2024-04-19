@@ -12,3 +12,53 @@ h1 {
 	border-left: 10px solid #31a9ee;	/* ボーダー左側のスタイルを指定する */
   	border-bottom: 1px dashed #31a9ee; 	/* ボーダー下部のスタイルを指定する */
 }
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;/*rem算出をしやすくするために*/
+}
+
+.btn,
+a.btn,
+button.btn {
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.5;
+    position: relative;
+    display: inline-block;
+    padding: 1rem 4rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    border-radius: 0.5rem;
+    color: #fff;
+    border-top: 4px solid #48ecc4;
+    border-right: 4px solid #0a5f4a;
+    border-bottom: 4px solid #0f745b;
+    border-left: 4px solid #8cf9de;
+    border-radius: 0;
+    background: #11a37f;
+}
+
+button.btn:hover {
+    color: #fff;
+    border-top: 4px solid #0f745b;
+    border-right: 4px solid #8cf9de;
+    border-bottom: 4px solid #48ecc4;
+    border-left: 4px solid #0a5f4a;
+}
