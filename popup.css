@@ -62,3 +62,17 @@ button.btn:hover {
     border-bottom: 4px solid #48ecc4;
     border-left: 4px solid #0a5f4a;
 }
+
+div#result {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center;
+    position: relative;
+    vertical-align: middle;
+    color: #31a9ee;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
