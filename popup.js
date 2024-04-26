@@ -1,15 +1,18 @@
 document.addEventListener('DOMContentLoaded', function() {
-    var D6 = document.getElementById('1d6');
-    var D100 = document.getElementById('1d100');
+    var rollButton = document.getElementById('rollButton');
+    var result = document.getElementById('result');
 
-    D6.addEventListener('click', function() {
-        var result = getRandomInt(1, 7);
-        document.getElementById('result').textContent = 'Result: ' + result;
-    });
+    rollButton.addEventListener('click', function() {
+        var numDice = document.getElementById('numberOfDice').value;
+        var maxNum = document.getElementById('maxNum').value;
+        let sum = 0;
+        maxNum++;
 
-    D100.addEventListener('click', function() {
-        var result = getRandomInt(1, 101);
-        document.getElementById('result').textContent = 'Result: ' + result;
+        for (let i = 0; i < numDice; i++) {
+            let roll = getRandomInt(1, maxNum);
+            sum += roll;
+        }
+        result.textContent = 'Result: ' + sum;
     });
 });
 

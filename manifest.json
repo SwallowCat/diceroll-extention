@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
     "name": "Chrome dice",
-    "version": "1.3",
-    "description": "dice roller",
+    "version": "1.4",
+    "description": "dice roller for TRPG players",
     "action": {
         "default_popup": "popup.html",
         "default_icon": {
