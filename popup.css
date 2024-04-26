@@ -27,7 +27,7 @@ html {
 
 .btn,
 a.btn,
-button.btn {
+button#rollButton {
     font-size: 1.3rem;
     font-weight: 700;
     line-height: 1.5;
@@ -55,7 +55,7 @@ button.btn {
     background: #11a37f;
 }
 
-button.btn:hover {
+button#rollButton:hover {
     color: #fff;
     border-top: 4px solid #0f745b;
     border-right: 4px solid #8cf9de;
@@ -75,4 +75,22 @@ div#result {
     padding: 10px;
     border: 1px solid #ccc;
     background-color: #f9f9f9;
+}
+
+input {
+    width: 50px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    color: #326693;
+}
+
+input:focus {
+    border: 2px solid #31a9ee; 
+    z-index: 10;
+    outline: 0;
+}
+
+label{
+    color: #326693;
+    font-size: large;
 }
